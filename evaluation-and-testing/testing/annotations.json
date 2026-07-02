@@ -1,0 +1,44 @@
+[
+  {
+    "detector": "face",
+    "start_sec": 0,
+    "end_sec": 8,
+    "expected": { "identity": "known", "name": "Estera Dumitru" }
+  },
+  {
+    "detector": "face",
+    "start_sec": 34,
+    "end_sec": 42,
+    "expected": { "identity": "unknown" }
+  },
+  {
+    "detector": "plate",
+    "start_sec": 8,
+    "end_sec": 13,
+    "expected": { "plate": "B112DGF", "authorized": false }
+  },
+  {
+    "detector": "har",
+    "start_sec": 19,
+    "end_sec": 34,
+    "expected": { "class": "vandalism" }
+  },
+  {
+    "detector": "har",
+    "start_sec": 48,
+    "end_sec": 66,
+    "expected": { "class": "fight" }
+  },
+  {
+    "detector": "fire",
+    "start_sec": 13,
+    "end_sec": 19,
+    "expected": { "class": "fire" }
+  },
+  {
+    "detector": "weapon",
+    "start_sec": 42,
+    "end_sec": 48,
+    "expected": { "present": true }
+  }
+]

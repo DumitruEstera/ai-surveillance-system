@@ -1,0 +1,51 @@
+[
+  {
+    "_comment": "ȘABLON — copiază acest fișier în annotations.json și completează-l cu timeline-ul REAL al clipului tău secvențial. Timpii sunt în secunde de la începutul clipului. Șterge câmpurile _comment înainte de rulare (sau lasă-le, sunt ignorate).",
+    "detector": "face",
+    "start_sec": 0,
+    "end_sec": 8,
+    "expected": { "identity": "known", "name": "NUMELE_PERSOANEI_CUNOSCUTE" }
+  },
+  {
+    "detector": "face",
+    "start_sec": 8,
+    "end_sec": 18,
+    "expected": { "identity": "unknown" }
+  },
+  {
+    "detector": "plate",
+    "start_sec": 20,
+    "end_sec": 35,
+    "expected": { "plate": "B123ABC", "authorized": true }
+  },
+  {
+    "detector": "plate",
+    "start_sec": 36,
+    "end_sec": 48,
+    "expected": { "plate": "CJ07XYZ", "authorized": false }
+  },
+  {
+    "detector": "har",
+    "start_sec": 50,
+    "end_sec": 62,
+    "expected": { "class": "vandalism" }
+  },
+  {
+    "detector": "har",
+    "start_sec": 64,
+    "end_sec": 76,
+    "expected": { "class": "fight" }
+  },
+  {
+    "detector": "fire",
+    "start_sec": 78,
+    "end_sec": 90,
+    "expected": { "class": "fire" }
+  },
+  {
+    "detector": "weapon",
+    "start_sec": 92,
+    "end_sec": 104,
+    "expected": { "present": true }
+  }
+]

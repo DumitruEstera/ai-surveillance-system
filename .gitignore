@@ -1,0 +1,41 @@
+# Repository-wide safety net. Each sub-project also has its own .gitignore
+# with more specific rules.
+
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# ── Node ─────────────────────────────────────────────────────────────
+node_modules/
+build/
+
+# ── Secrets ──────────────────────────────────────────────────────────
+.env
+*.env
+!*.env.example
+!.env.example
+
+# ── Trained model weights (distributed separately) ───────────────────
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.engine
+
+# ── FAISS indexes (rebuilt from the database at startup) ─────────────
+*.index
+*.faiss
+
+# ── Logs / archives ──────────────────────────────────────────────────
+*.log
+*.zip
+
+# ── OS / editors ─────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+.claude/

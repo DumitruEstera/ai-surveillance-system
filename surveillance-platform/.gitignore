@@ -1,0 +1,50 @@
+# ── Secrets ──────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# ── Node / React frontend ────────────────────────────────────────────
+/frontend/node_modules/
+/frontend/build/
+/frontend/coverage/
+.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Trained models / weights (distributed separately) ────────────────
+models/
+/facenet_model/
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.engine
+
+# ── FAISS indexes (rebuilt from the database at startup) ─────────────
+*.index
+*.faiss
+
+# ── Media (datasets, sample clips) ───────────────────────────────────
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# ── Logs ─────────────────────────────────────────────────────────────
+*.log
+
+# ── OS / editor ──────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/

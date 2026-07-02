@@ -1,0 +1,39 @@
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# ── Trained models / checkpoints (distributed separately) ────────────
+# NB: models/ holds source code (slowfast_model.py) too — only the weights
+# (*.pth / *.pt) and the old_models/ checkpoints are excluded, not the .py.
+*.pth
+*.pt
+*.onnx
+models/old_models/
+output/checkpoints/
+output/logs/
+
+# ── Datasets ─────────────────────────────────────────────────────────
+data/RWF-2000/
+data/train/
+data/test/
+*.zip
+
+# ── Media ────────────────────────────────────────────────────────────
+*.avi
+*.mp4
+*.mov
+*.mkv
+
+# ── Logs ─────────────────────────────────────────────────────────────
+*.log
+
+# ── OS / editor ──────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project

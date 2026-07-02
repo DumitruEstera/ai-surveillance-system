@@ -1,0 +1,38 @@
+# Only the scripts (and README / small annotation JSON configs) are versioned.
+# The datasets, downloaded data, images, videos and generated results are NOT my
+# data and must never be committed.
+
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ── Datasets, downloaded data, caches and generated results ──────────
+evaluation/cache/
+evaluation/dataset/
+evaluation/dataset_large/
+evaluation/plate_eval/
+evaluation/video_eval/
+evaluation/fire_eval/
+evaluation/har_eval/
+evaluation/results/
+evaluation/results_large/
+testing/results/
+
+# ── Images / videos (not my datasets) ────────────────────────────────
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+*.gif
+*.tif
+*.tiff
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# ── Logs ─────────────────────────────────────────────────────────────
+*.log

@@ -1,0 +1,32 @@
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# ── Trained models / weights (distributed separately) ────────────────
+*.pt
+*.onnx
+
+# ── Datasets (staged under /dev/shm at training time) ────────────────
+weapon_dataset/
+zenodo_raw/
+roboflow_raw/
+*.zip
+
+# ── Training run artifacts ───────────────────────────────────────────
+# Keep small result plots/metrics (results.csv, *_curve.png, confusion*.png,
+# args.yaml); drop the large per-batch preview mosaics.
+weapon_yolo/train_batch*.jpg
+weapon_yolo/val_batch*.jpg
+
+# ── Logs ─────────────────────────────────────────────────────────────
+*.log
+train_log.txt
+
+# ── OS / editor ──────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
