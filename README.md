@@ -281,10 +281,22 @@ included.
 
 ## Citation
 
-If this repository is used as part of academic work, please cite the related paper:
+If you use this work, please cite the accompanying paper ([arXiv:2607.03131](https://arxiv.org/abs/2607.03131)):
 
-E. Dumitru and S. Spînu, "A Multi-Task Deep Learning Framework for Real-Time
-Intelligent Video Surveillance with Temporal Event Validation."
+E. Dumitru and S. Spînu, *A Multi-Task Deep Learning Framework for Real-Time Intelligent Video Surveillance with Temporal Event Validation*, arXiv:2607.03131 [cs.CV], 2026.
+
+```bibtex
+@misc{dumitru2026multitask,
+  title         = {A Multi-Task Deep Learning Framework for Real-Time Intelligent
+                   Video Surveillance with Temporal Event Validation},
+  author        = {Dumitru, Estera and Sp{\^i}nu, Stelian},
+  year          = {2026},
+  eprint        = {2607.03131},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2607.03131}
+}
+```
 
 ## Author
 
